@@ -1,0 +1,143 @@
+<html>
+    <head>
+    <link rel="Stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Skill Intern India</title>
+    </head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <div class="logo">Portfolio<b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#contact us">Contact us</a></li>
+                
+            </ul>
+            <div class="links">
+           <a href="https://www.linkedin.com/in/sridevi-ravi-780232223"><i class='bx bxl-linkedin-square'></i></a>
+           <a href="srideviravi321@gmail.com"><i class='bx bxs-envelope'></i></a>
+           <a href="https://github.com/vivekbr-lab/sridevi.git"><i class='bx bxl-github'></i></a>
+            </div>
+        </nav>
+        <div class="wrapper">
+
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h2>I'm<span class="multiText"></span></h2>
+                <p>I am doing my degree in Aamec ,B.Tech-Information Technology.</p>
+                <div class="home-img">
+                <img src="pic2.png.jpg" >
+                </div>
+
+               <div class="btns">
+                <button><a href="resume.png" download>Download CV</a></button>
+               </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+</div>
+ <div id="about">
+            <div class="container1">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="sri.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>I am sridevi B R and am a Information Technology undergraduate from AAMEC.I am very passionate about improving my coding skills and soft skills.                     </p>
+                           <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('achivement')">Achivement</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="education">
+                            <ul>
+                                <li><span>2023-current</span><br>Anjalai Ammal Mahalingam Eng.college(B.Tech)</li>
+                                <li><span>2019-2021</span><br>Sacred Heart hr.sec.school(higher secondary) </li>
+                                <li><span>2018-2019</span><br>st.Jospehs girls hr.sec. school(SSLC)</li>
+                            </ul>
+                           </div>
+                           <div class="tab-contents" id="achivement">
+                            <ul>
+                                <li><span>CGPA</span><br>overall cgpa is 8.8</li>
+                                <li><span>Intern</span><br>Zoho corporation </li>
+                                <li><span>udemy courses</span><br>Python,java,full stack web development</li>
+                                <li><span>GreatLearning courses</span><br>Python,IOT,javascript</li>
+                            </ul>
+                           </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills">
+        <div class="skill">
+        <h1>my skills</h1>
+        <li><h3>Python</h3>
+        <span class="bar"><span class="python"></span>
+        </li>
+        <li><h3>Java</h3>
+            <span class="bar"><span class="java"></span>
+       </li>
+        <li><h3>CSS</h3>
+            <span class="bar"><span class="css"></span>
+        </li>
+        <li><h3>HTML</h3>
+            <span class="bar"><span class="html"></span>
+            </li>
+    </div>
+        </div>
+        <div id="contact us">
+            <div class="h">
+                <h1><u>Contact me</u></h1>
+                <h3></h3>
+
+            </div>
+            <div class="wrapper1">
+                
+            <form >
+                
+            <div class="input-box">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Phone No.">
+            </div> 
+            <div class="input-box">
+                <input type="text" placeholder="Email Id">
+            </div>  
+            <div class="input-box">
+                <textarea id="message" rows="8" placeholder="Your Message"></textarea>
+            </div>    
+            <button class="btn1" type="submit">SUBMIT</button>
+        </form>
+            </div>
+            
+        </div>
+         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            var typingEffect=new Typed(".multiText",{
+                strings:["Student","Coder","Designer"],
+            loop:true,
+        typeSpeed:100,
+    backSpeed:80,
+backDelay:1500})
+        </script>
+</body>
+</html>
